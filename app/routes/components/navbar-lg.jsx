@@ -14,7 +14,7 @@ export default function NavLarge() {
       <div className="">
         <ul>
           {navBarData.map((item, index) => (
-            <li key={index}>
+            <li className="flex" key={index}>
               <Link className="flex gap-[20px]" to={item.path}>
                 <img src={item.icon} alt="" />
                 <span>{item.title}</span>
